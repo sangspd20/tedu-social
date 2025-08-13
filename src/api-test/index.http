@@ -1,0 +1,6 @@
+@baseUrl = http://localhost:5000
+POST {{baseUrl}}
+
+### 🔐 Test index api
+GET {{baseUrl}}
+

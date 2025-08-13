@@ -1,3 +1,3 @@
-import Route from "core/interfaces/routes.interfaces";
+import Route from "@core/interfaces/routes.interfaces";
 
 export { Route };

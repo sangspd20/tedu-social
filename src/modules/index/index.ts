@@ -1,4 +1,4 @@
-import IndexController from "./index.controller";
-import IndexRoute from "./index.route";
+import IndexController from "@modules/index/index.controller";
+import IndexRoute from "@modules/index/index.route";
 
 export { IndexController, IndexRoute };

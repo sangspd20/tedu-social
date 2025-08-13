@@ -6,6 +6,7 @@ import helmet from "helmet";
 import cors from "cors";
 import morgan from "morgan";
 import { Logger } from "@core/utils";
+import { errorMiddleware } from "@core/middleware";
 class App {
   public app: express.Application;
   public port: string | number;
@@ -51,6 +52,8 @@ class App {
         })
       );
     }
+
+    this.app.use(errorMiddleware);
   }
   private connectToDatabase() {
     // Replace with your MongoDB connection string
